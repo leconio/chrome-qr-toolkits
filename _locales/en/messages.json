@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "Selected Text QR Code Generator"
+  },
+  "extensionDescription": {
+    "message": "Generate a QR code for the selected text by pressing the hotkey and store the history."
+  },
+  "generateQRDescription": {
+    "message": "Generate QR code for selected text"
+  },
+  "historyTitle": {
+    "message": "QR Code History"
+  },
+  "noTextAlert": {
+    "message": "Please select some text first!"
+  }
+}

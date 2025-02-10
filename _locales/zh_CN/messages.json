@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "选中生成二维码"
+  },
+  "extensionDescription": {
+    "message": "在 Chrome 浏览器中选中文本后，按下热键生成二维码，并记录历史。"
+  },
+  "generateQRDescription": {
+    "message": "生成选中文本的二维码"
+  },
+  "historyTitle": {
+    "message": "二维码历史记录"
+  },
+  "noTextAlert": {
+    "message": "请先选中文本！"
+  }
+}

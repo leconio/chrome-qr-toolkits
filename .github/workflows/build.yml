@@ -1,0 +1,27 @@
+name: Build and Package Extension
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Package Extension
+        run: |
+          zip -r extension.zip . -x "*.git*" -x "node_modules/*" -x ".github/*"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: chrome-extension-package
+          path: extension.zip
