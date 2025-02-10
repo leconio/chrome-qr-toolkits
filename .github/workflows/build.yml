@@ -1,15 +1,12 @@
-name: Build and Package Extension
+name: Build and Release Extension
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
-  build:
+  build-and-release:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,8 +17,12 @@ jobs:
         run: |
           zip -r extension.zip . -x "*.git*" -x "node_modules/*" -x ".github/*"
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
         with:
-          name: chrome-extension-package
-          path: extension.zip
+          files: extension.zip
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
