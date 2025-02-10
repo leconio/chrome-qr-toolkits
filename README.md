@@ -25,12 +25,10 @@
 ### 1. 生成二维码示例
 
 ![生成二维码示例](screenshots/screenshot_generate.png)  
-_（请将截图文件放到 `screenshots` 目录下，并命名为 screenshot_generate.png）_
 
 ### 2. 历史记录页面
 
 ![历史记录页面](screenshots/screenshot_history.png)  
-_（请将历史记录页面截图保存到 `screenshots` 目录下，并命名为 screenshot_history.png）_
 
 ## 开发与构建
 

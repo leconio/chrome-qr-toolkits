@@ -25,12 +25,10 @@
 ### 1. QR Code Generation Example
 
 ![QR Code Generation Example](screenshots/screenshot_generate.png)  
-_(Please place the screenshot in the `screenshots` directory and name it screenshot_generate.png)_
 
 ### 2. History Page
 
 ![History Page](screenshots/screenshot_history.png)  
-_(Please place the history page screenshot in the `screenshots` directory and name it screenshot_history.png)_
 
 ## Development and Build
 
